@@ -145,7 +145,7 @@ export default function LocalBoostLandingPage() {
             Vul dit formulier in en je krijgt binnen 24u 2 voorbeeldposts op maat van jouw zaak.
           </p>
 
-          <form action="https://formspree.io/f/YOUR_ID" method="POST" className="mt-8 space-y-4">
+          <form action="https://formspree.io/f/mqewpyoz" method="POST" className="mt-8 space-y-4">
             <input name="name" required placeholder="Naam" className="w-full p-3 bg-black border border-white/10 rounded" />
             <input name="email" required type="email" placeholder="Email" className="w-full p-3 bg-black border border-white/10 rounded" />
             <input name="business" placeholder="Bedrijf" className="w-full p-3 bg-black border border-white/10 rounded" />
