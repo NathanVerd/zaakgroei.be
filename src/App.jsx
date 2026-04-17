@@ -46,15 +46,30 @@ export default function LocalBoostLandingPage() {
           <h1 className="text-5xl font-semibold leading-tight">
             Meer klanten voor lokale bedrijven — zonder dat ze zelf iets moeten doen
           </h1>
+
+          <p className="mt-4 text-lg text-white/70">
+            Ontvang gratis 2 voorbeeldposts binnen 24u
+          </p>
+
+          <p className="mt-3 text-sm text-white/60">
+            Voor lokale bedrijven in België
+          </p>
+
           <p className="mt-6 text-xl text-white/70">
             Wij maken en beheren je social media, beantwoorden reviews en zorgen dat je zaak er professioneel uitziet online — elke maand opnieuw.
           </p>
 
           <div className="mt-8 flex gap-4">
-            <a href="#contact" className="bg-white text-black px-6 py-3 rounded-xl font-medium">
-              Gratis voorbeeld aanvragen
+            <a
+              href="#contact"
+              className="bg-white text-black px-6 py-3 rounded-xl font-medium"
+            >
+              Ontvang gratis 2 posts
             </a>
-            <a href="#prijzen" className="border border-white/20 px-6 py-3 rounded-xl">
+            <a
+              href="#prijzen"
+              className="border border-white/20 px-6 py-3 rounded-xl"
+            >
               Bekijk prijzen
             </a>
           </div>
@@ -75,9 +90,7 @@ export default function LocalBoostLandingPage() {
             <li>• Je verliest klanten aan concurrenten die wel zichtbaar zijn</li>
           </ul>
 
-          <p className="mt-8 text-xl">
-            👉 Dat is exact wat wij oplossen.
-          </p>
+          <p className="mt-8 text-xl">👉 Dat is exact wat wij oplossen.</p>
         </div>
       </section>
 
@@ -111,11 +124,19 @@ export default function LocalBoostLandingPage() {
               <div key={pkg.name} className="p-6 border border-white/10 rounded-xl">
                 <h3 className="text-2xl font-semibold">{pkg.name}</h3>
                 <p className="mt-2 text-white/60">{pkg.description}</p>
-                <p className="text-3xl mt-4">{pkg.price}{pkg.period}</p>
+                <p className="text-3xl mt-4">
+                  {pkg.price}
+                  {pkg.period}
+                </p>
                 <ul className="mt-4 space-y-2 text-white/70">
-                  {pkg.features.map((f) => <li key={f}>• {f}</li>)}
+                  {pkg.features.map((f) => (
+                    <li key={f}>• {f}</li>
+                  ))}
                 </ul>
-                <a href="#contact" className="block mt-6 bg-white text-black text-center py-2 rounded">
+                <a
+                  href="#contact"
+                  className="block mt-6 bg-white text-black text-center py-2 rounded"
+                >
                   Start
                 </a>
               </div>
@@ -146,18 +167,36 @@ export default function LocalBoostLandingPage() {
           </p>
 
           <form action="https://formspree.io/f/mqewpyoz" method="POST" className="mt-8 space-y-4">
-            <input name="name" required placeholder="Naam" className="w-full p-3 bg-black border border-white/10 rounded" />
-            <input name="email" required type="email" placeholder="Email" className="w-full p-3 bg-black border border-white/10 rounded" />
-            <input name="business" placeholder="Bedrijf" className="w-full p-3 bg-black border border-white/10 rounded" />
-            <input name="instagram" placeholder="Instagram of website" className="w-full p-3 bg-black border border-white/10 rounded" />
-            <button type="submit" className="w-full bg-white text-black py-3 rounded font-medium">
-              Vraag gratis voorbeeld
+            <input
+              name="name"
+              required
+              placeholder="Naam"
+              className="w-full p-3 bg-black border border-white/10 rounded"
+            />
+            <input
+              name="email"
+              required
+              type="email"
+              placeholder="Email"
+              className="w-full p-3 bg-black border border-white/10 rounded"
+            />
+            <input
+              name="business"
+              placeholder="Bedrijf"
+              className="w-full p-3 bg-black border border-white/10 rounded"
+            />
+            <input
+              name="instagram"
+              placeholder="Instagram of website"
+              className="w-full p-3 bg-black border border-white/10 rounded"
+            />
+            <button
+              type="submit"
+              className="w-full bg-white text-black py-3 rounded font-medium"
+            >
+              Ontvang gratis 2 posts
             </button>
           </form>
-
-          <p className="mt-6 text-sm text-white/50">
-            👉 BELANGRIJK: vervang YOUR_ID door je Formspree ID zodat aanvragen werken.
-          </p>
         </div>
       </section>
 
