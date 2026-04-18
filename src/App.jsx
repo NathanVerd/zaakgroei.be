@@ -81,17 +81,20 @@ export default function ZaakgroeiHomepage() {
               Voor loodgieters en lokale vakmannen
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl leading-tight">
-              Meer klanten via Google, zonder gedoe met marketing
+              Meer loodgieterklanten via Google — zonder dat jij iets met marketing moet doen
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Ik help lokale vakmannen beter gevonden worden, professioneler overkomen en meer aanvragen krijgen met een simpele website en een sterke online basis.
+              Ik zorg dat je beter gevonden wordt en meer aanvragen krijgt met een simpele website en een sterke online basis.
+            </p>
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-500">
+              De meeste loodgieters verliezen elke week klanten omdat ze niet goed zichtbaar zijn op Google.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#contact"
                 className="rounded-2xl bg-slate-900 px-6 py-4 text-base font-medium text-white shadow-sm transition hover:opacity-90"
               >
-                Vraag gratis mini-audit aan
+                Check mijn Google-profiel gratis
               </a>
               <a
                 href="#werkwijze"
@@ -106,6 +109,9 @@ export default function ZaakgroeiHomepage() {
               <div>✓ Simpel en duidelijk</div>
               <div>✓ Voor lokale bedrijven</div>
             </div>
+            <p className="mt-6 max-w-xl text-sm leading-6 text-slate-500">
+              Of je nu vooral dringende interventies doet of geplande werken — online zichtbaar zijn maakt het verschil tussen wachten op werk of zelf kiezen welke jobs je aanneemt.
+            </p>
           </div>
 
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/60">
@@ -177,6 +183,29 @@ export default function ZaakgroeiHomepage() {
               <p className="mt-3 leading-7 text-slate-600">{step.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight">Wat ik voor je bekijk in een audit</h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Geen vaag gesprek, maar een concrete check van waar je online klanten laat liggen.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {[
+              'Hoe goed je gevonden wordt op Google',
+              'Waar je klanten verliest op je profiel of website',
+              'Wat concurrenten in jouw regio beter doen',
+              'Wat je meteen kan verbeteren voor meer aanvragen',
+            ].map((item) => (
+              <div key={item} className="rounded-2xl border border-slate-200 bg-white p-6 text-slate-700 shadow-sm">
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -269,3 +298,4 @@ export default function ZaakgroeiHomepage() {
     </main>
   );
 }
+
